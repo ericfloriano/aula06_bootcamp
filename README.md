@@ -3,13 +3,13 @@
 ## Contexto
 
 - **Black** – Formatador de código automático
-👉 Reescreve o código Python conforme uma convenção rígida de estilo. Você não precisa decidir sobre o espaçamento ou a quebra de linhas: o Black decide por você. É conhecido como “o uncompromising code formatter”.
+- - Reescreve o código Python conforme uma convenção rígida de estilo. Você não precisa decidir sobre o espaçamento ou a quebra de linhas: o Black decide por você. É conhecido como “o uncompromising code formatter”.
 
 - **isort** – Organizador de imports
-👉 Ordena automaticamente os imports do seu código Python, separando por tipo (standard library, third-party, e local) e deixando tudo limpo e organizado.
+- - Ordena automaticamente os imports do seu código Python, separando por tipo (standard library, third-party, e local) e deixando tudo limpo e organizado.
 
 - **Flake8** – Ferramenta de linting
-👉 Analisa o código em busca de erros, más práticas, estilo fora do PEP8, variáveis não usadas, entre outros. É uma espécie de “revisor” que aponta problemas antes da execução.
+- - Analisa o código em busca de erros, más práticas, estilo fora do PEP8, variáveis não usadas, entre outros. É uma espécie de “revisor” que aponta problemas antes da execução.
 
 ## Preparação do Ambiente
 
@@ -23,5 +23,5 @@
 ## Instalar as Bibliotecas
 
 - **Flake8:** 
-Para instalar: `poetry add flake8`
-Para executar: `poetry run flake8`
+1) Para instalar: `poetry add flake8`
+2) Para executar: `poetry run flake8`
