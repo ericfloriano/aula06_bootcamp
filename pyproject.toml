@@ -6,12 +6,30 @@ authors = [
     {name = "ericfloriano",email = "ericfloriano@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<4.0"
 dependencies = [
-    "flake8 (>=7.2.0,<8.0.0)"
+    "flake8 (>=7.2.0,<8.0.0)",
+    "black (>=25.1.0,<26.0.0)",
+    "isort (>=6.0.1,<7.0.0)",
+    "taskipy (>=1.14.1,<2.0.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.taskipy.tasks]
+format = "black main.py && isort main.py"
+lint = "flake8 main.py"
+run = "python main.py"
+
+[tool.black]
+target-version = ['py311']
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
+
